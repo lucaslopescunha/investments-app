@@ -1,12 +1,17 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { HeaderComponent } from './header/header';
+import { UserInputComponent } from './user-input/user-input';
+import { InvestmentResults } from "./investment-results/investment-results";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [HeaderComponent, UserInputComponent, InvestmentResults],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('investments-app');
+export class AppComponent {
+
+
+// two possible values
+
 }
